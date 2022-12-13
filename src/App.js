@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Login from './login/Login'
 import Register from './register/Register'
 
 class App extends React.Component {
@@ -25,6 +26,11 @@ class App extends React.Component {
                   exact
                   path='/'
                   element={<Register />}
+                />
+               <Route 
+                  exact
+                  path='/login'
+                  element={<Login />}
                 />
             </Routes>
           </div>

@@ -5,11 +5,19 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import Checkbox from '@mui/material/Checkbox';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 const Register = () => {
     const paperStyle = { padding: '30px 20px', width: 300, margin: "20px auto" }
     const headerStyle = { margin: 0 }
     const textStyle = {marginTop: "5px"}
+
+    const navigate = useNavigate();
+
+    const navigateToLogin = () => {
+         navigate('/login');
+    };
+
     return (
         <Grid>
             <Paper elevation={20} style={paperStyle}>
@@ -27,7 +35,7 @@ const Register = () => {
                         control={<Checkbox name="checkedA" />}
                         label="I accept the terms and conditions."
                     />
-                    <Button type='submit' variant='contained' color='primary'>Sign up</Button>
+                    <Button type='submit' variant='contained' color='primary' onClick={navigateToLogin}>Sign up</Button>
                 </form>
             </Paper>
         </Grid>
