@@ -1,0 +1,78 @@
+.main {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 40px;
+    color: rgb(1, 1, 59);
+}
+
+.search {
+    /* Rectangle 3 */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 90%;
+    height: 42px;
+    top: 193px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    background: #ECECEC;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 39px;
+}
+.search>icon{
+    width: 22.8px;
+    height: 24px;
+}
+.search-text{
+    font-family: 'Khmer';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    border-left: 1px solid rgba(0, 0, 0, 0.7);;
+    padding-left: 10px;
+    padding-top: 10px   ;
+    height: 42px;
+}
+.dropdown{
+    width: 125px;
+    height: 45px;
+    padding-left: 10px;
+
+
+    background: #ECECEC;
+    border: 0px solid;
+    outline: 0px;
+    font-family: 'Khmer';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+
+    letter-spacing: 0.01em;
+}
+
+.dropdown:focus{
+
+    border: 0px solid;
+    outline: 0px;
+
+
+}
+
+
+
+ul li {
+    font-size: 20px;
+} 
