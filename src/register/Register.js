@@ -1,9 +1,6 @@
 import React from 'react'
 import { Grid, Paper, Avatar, Typography, TextField, Button } from '@mui/material'
-import Icon from '@mui/material/Icon';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import FormControl from '@mui/material/FormControl';
-import FormLabel from '@mui/material/FormLabel';
 import Checkbox from '@mui/material/Checkbox';
 
 const Register = () => {
