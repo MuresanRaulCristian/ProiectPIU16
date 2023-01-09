@@ -13,7 +13,7 @@ class PacientHome extends React.Component {
             <div>
             <NavigationBar></NavigationBar>
             <div className="welcome-text">
-                <h1>Bine ai revenit, George!</h1>
+                <h1>Welcome back, George!</h1>
             </div>
             <div className="buttons-zone">
 
