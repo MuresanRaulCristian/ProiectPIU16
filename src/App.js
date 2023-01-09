@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Register from './register/Register'
 import AdminHome from './admin-home'
+import PacientHome from './pacient-home'
 
 class App extends React.Component {
 
@@ -26,6 +27,11 @@ class App extends React.Component {
                   exact
                   path='/'
                   element={<AdminHome />}
+                />
+                <Route 
+                  exact
+                  path='/pacient'
+                  element={<PacientHome />}
                 />
             </Routes>
           </div>
