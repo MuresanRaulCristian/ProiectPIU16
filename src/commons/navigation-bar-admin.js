@@ -12,7 +12,7 @@ const NavigationBarAdmin = () => {
              <img src={logo} alt="Logo" className="logo"/>
              <div className="logo-text"><h2>LOVE</h2><h2>FOR PEOPLE</h2></div>
                 <Nav className="nav-button" navbar>
-                        <NavLink style={{textDecoration: "none", padding:"50px 25px 30px 25px", color: "white"}} href="">HOME</NavLink>
+                        <NavLink style={{textDecoration: "none", padding:"50px 25px 30px 25px", color: "white"}} href="/">HOME</NavLink>
                         <NavLink style={{textDecoration: "none", padding:"50px 25px 30px 25px", color: "white"}} onMouseOver={() => setPacientsDropdownOpen(false)} href="/emergencies">EMERGENCIES</NavLink>     
                         <NavLink style={{textDecoration: "none", padding:"50px 25px 30px 25px", color: "white"}}  onMouseOver={() => setPacientsDropdownOpen(true)} href="/pacients">PACIENTS</NavLink>
                         {isPacientsDropdownOpen && 
