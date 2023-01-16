@@ -4,11 +4,13 @@ import './Graph.css'
 import {Icon} from '@iconify/react';
 import {render} from "react-dom";
 import cards from './graphs.json'
+import {useParams} from "react-router-dom";
 
-const Graph = () => {
+const Graph1 = () => {
     const [inputText, setInputText] = useState("");
     const [isActive, setIsActive] = useState(false);
 
+    let { id } = useParams();
 
 
     const dropdownMenuProps = {
@@ -43,8 +45,8 @@ const Graph = () => {
             >
                 {filteredData.map((item) => (
                     <Grid item xs={6} align="center" key={item.src}>
-                        <div className={'card'} onClick={() => window.location.href='/graph/' + item.id}>
-                            <div className={'image-text'} >{item.text}</div>
+                        <div className={'card'}>
+                            <div className={'image-text'}>{item.text}</div>
                             <img src={require("" + item.src)} className={'small-image'}></img>
                         </div>
                     </Grid>
@@ -79,7 +81,22 @@ const Graph = () => {
                     <Icon icon="ant-design:sort-ascending-outlined" width={34.8} height={34}/>
                 </Button>
             </div>
-            <List input={inputText} />
+            <div className={'card'}>
+                <div className={'big-card'}>
+                    <div className={'big-text'}>{cards[id].text}</div>
+                    <div className={'time-select'}>
+                        <div className={'time-select-text'}>
+                            last:
+                        </div>
+                        <select className={"dropdown"}>
+                            <option value="0">1 min</option>
+                            <option value="1">30 min</option>
+                            <option value="2">1 hour</option>
+                        </select>
+                    </div>
+                </div>
+                <img src={require("" + cards[id].src)} className={'big-image'}></img>
+            </div>
 
 
 
@@ -114,4 +131,4 @@ const Graph = () => {
         </div>
     )
 }
-export default Graph
+export default Graph1
