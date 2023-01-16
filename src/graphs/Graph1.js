@@ -5,7 +5,7 @@ import {Icon} from '@iconify/react';
 import {render} from "react-dom";
 import cards from './graphs.json'
 import {useParams} from "react-router-dom";
-
+import NavigationBarAdmin from '../commons/navigation-bar-admin';
 const Graph1 = () => {
     const [inputText, setInputText] = useState("");
     const [isActive, setIsActive] = useState(false);
@@ -56,6 +56,7 @@ const Graph1 = () => {
     }
     return (
         <div className="main">
+            <NavigationBarAdmin></NavigationBarAdmin>
             <h1>React Search</h1>
             <div className="search">
                 <Button sx={{color: 'black'}}>
@@ -64,7 +65,7 @@ const Graph1 = () => {
                 <Input onChange={inputHandler} disableUnderline={true}
                        sx={{
                            paddingLeft: '5px',
-                           width: '81%',
+                           width: '75%',
                            fontFamily: 'Khmer',
                            fontSize: '20px',
                        }}
@@ -77,7 +78,7 @@ const Graph1 = () => {
                     <option value="1">category</option>
                 </select>
 
-                <Button sx={{color: 'black'}}>
+                <Button sx={{color: 'black', width: '50px'}}>
                     <Icon icon="ant-design:sort-ascending-outlined" width={34.8} height={34}/>
                 </Button>
             </div>

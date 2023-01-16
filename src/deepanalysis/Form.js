@@ -1,11 +1,11 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import NavigationBarAdmin from '../commons/navigation-bar-admin';
 import "./Form.css"
-import { Dots } from 'loading-animations-react';
 
 export default function DeepAnalysis() {
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => window.location.href='/analysis/result';
+    const onSubmit = data => console.log(data);
     console.log(errors);
     const inputFile = React.useRef(null); 
 
@@ -17,7 +17,10 @@ export default function DeepAnalysis() {
 
     return (
         <div>
+            <NavigationBarAdmin></NavigationBarAdmin>
             <h1>Deep Analysis</h1>
+            <h1>Deep Analysis</h1>
+
         <div className={'form-background'}>
         
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -63,7 +66,7 @@ export default function DeepAnalysis() {
 
 
             </div>
-            <input type="submit" value="RUN"/>
+            <input onClick={  () => window.location.href='/analysis/result'} type="submit" value="RUN"/>
         </form>
         </div>
         </div>

@@ -4,7 +4,7 @@ import './Graph.css'
 import {Icon} from '@iconify/react';
 import {render} from "react-dom";
 import cards from './graphs.json'
-
+import NavigationBarAdmin from '../commons/navigation-bar-admin';
 const Graph = () => {
     const [inputText, setInputText] = useState("");
     const [isActive, setIsActive] = useState(false);
@@ -54,6 +54,7 @@ const Graph = () => {
     }
     return (
         <div className="main">
+            <NavigationBarAdmin></NavigationBarAdmin>
             <h1>React Search</h1>
             <div className="search">
                 <Button sx={{color: 'black'}}>
@@ -62,7 +63,7 @@ const Graph = () => {
                 <Input onChange={inputHandler} disableUnderline={true}
                        sx={{
                            paddingLeft: '5px',
-                           width: '81%',
+                           width: '75%',
                            fontFamily: 'Khmer',
                            fontSize: '20px',
                        }}
@@ -75,7 +76,7 @@ const Graph = () => {
                     <option value="1">category</option>
                 </select>
 
-                <Button sx={{color: 'black'}}>
+                <Button sx={{color: 'black', width:'50px'}}>
                     <Icon icon="ant-design:sort-ascending-outlined" width={34.8} height={34}/>
                 </Button>
             </div>

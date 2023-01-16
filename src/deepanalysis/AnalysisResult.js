@@ -2,6 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import "./Form.css"
 import { Waves } from 'loading-animations-react';
+import NavigationBarAdmin from '../commons/navigation-bar-admin';
 
 
 export default function AnalysisResult() {
@@ -17,14 +18,17 @@ export default function AnalysisResult() {
         return <Waves waveColor="cyan" backgroundColor="#FFF" />;
     }
     return (<div >
+        <NavigationBarAdmin></NavigationBarAdmin>
         <h1>Deep Analysis</h1>
+        <h1>Deep Analysis</h1>
+
         <div className='treatment'>
         <div className='image-container'>
             <img src={require("./images/result.png")} />
         </div>
         <div className='result-container'>
             <ul>
-                <h2>Treatment Plan</h2>
+                <h2 style={{color: 'white'}}>Treatment Plan</h2>
                 <li>Cefuroxime - 1 pills every 4h  </li>
                 <li>Amikacin - 1 pill in the morning and in the evening</li>
                 <li>Terbinafine - 1 pill every day</li>

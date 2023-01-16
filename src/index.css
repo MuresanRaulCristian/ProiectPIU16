@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "Maitree";
+  src: local("Maitree"),
+  url("./fonts/Maitree/Maitree-ExtraLight.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MaitreeBold";
+  src: local("MaitreeBold"),
+  url("./fonts/Maitree/Maitree-SemiBold.ttf") format("truetype");
+  font-weight: bold;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +24,235 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navigation-bar {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+
+  background: #5CA4CC;
+  box-shadow: 0px 6px 17px -2px rgba(0, 0, 0, 0.25);
+}
+
+.logo-text {
+  position: absolute;
+  left: 86px;
+  top: 18px;
+  font-family: 'Maitree';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 41px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: white;
+
+  mix-blend-mode: normal;
+}
+
+h2:first-child {
+  color: #990D0D;
+  padding-right: 5px;
+}
+
+a:hover {
+  background-color: #990D0D;
+  color: white;
+}
+
+.footer {
+  position: absolute;
+  width: 99.7%;
+  height: 54px;
+  bottom: -270px;
+  background: #ECECEC;
+  mix-blend-mode: normal;
+  border: 2px solid #EFEFEF;
+}
+
+.nav-button {
+  position: absolute;
+  right: 50px;
+  top: 15px; 
+  font-family: 'Maitree';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 41px;
+  text-transform: uppercase;
+}
+
+.logo {
+  position: absolute;
+  height: 100px;
+  left: 0px;
+  top: 5px;
+}
+
+.welcome-text {
+  position: absolute;
+  left: 90px;
+  top: 110px;
+
+  font-family: 'Maitree';
+  font-style: normal;
+  font-size: 25px;
+  line-height: 94px;
+  letter-spacing: 0.01em;
+  text-shadow: 1px 1px 2px #D6D6D6;
+  color: #000000;
+}
+
+.buttons-zone {
+  position: absolute;
+  width: 1370px;
+  height: 180px;
+  left: 90px;
+  top: 280px;
+  background: #5CA4CC;
+  border-radius: 10px;
+}
+
+.new-notification {
+  position: absolute;
+  width: 42%;
+  height: 174px;
+  left: 820px;
+  top: 520px;
+
+  background: #5CA4CC;
+  border-radius: 10px 0px 10px 10px;
+}
+
+.my-doctor {
+  position: absolute;
+  width: 42%;
+  height: 367px;
+  left: 90px;
+  top: 520px;
+
+  background: #5CA4CC;
+  border-radius: 10px;
+  filter: drop-shadow(5px 4px 14px #D6D6D6);
+}
+
+.treatment-plan {
+  position: absolute;
+  width: 42%;
+  height: 168px;
+  left: 820px;
+  top: 720px;
+
+  background: #5CA4CC;
+  border-radius: 10px;
+}
+
+h3 {
+  font-family: 'MaitreeBold';
+  font-style: bold;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  margin-left: 40px;
+}
+
+p {
+  font-family: 'MaitreeBold';
+  font-style: bold;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin-left: 40px;
+  color: white;
+}
+
+.doctorImg {
+  width: 234px;
+  height: 237.7px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+h4 {
+  font-family: 'Maitree';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin: 20px 0px 20px 30px;
+}
+
+h6 {
+  font-family: 'Maitree';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  margin: 10px 0px 0px 20px;
+
+  color: #FFFFFF;
+}
+
+button {
+  width: 167.92px;
+  height: 60.25px;
+
+  background: #99DAFF;
+  color: #990D0D;
+  font-family: 'MaitreeBold';
+  font-style: bold;
+  font-size: 20px;
+  border: 1px solid #56A3CE;
+  border-radius: 8px;
+  margin: 10px 0px 0px 20px;
+}
+
+button:hover {
+  border-color: #990D0D;
+  border-width: 2px;
+  color: black;
+}
+
+.dropdown-pacients {
+  position: absolute;
+  width: 140px;
+  height: 205px;
+  left: 345px;
+  top: 70px;
+  background: #F5F5F5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-pacients > a {
+  padding-left: 20px;
+}
+
+a {
+  color: black;
+}
+
+.dropdown-data {
+  position: absolute;
+  width: 135px;
+  height: 100px;
+  margin-left: 428px;
+  margin-top: 30px;
+  background: #F5F5F5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-data > a {
+  padding-left: 10px;
+  border-color: black;
+} 
