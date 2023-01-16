@@ -4,6 +4,9 @@ import Login from './login/Login'
 import Register from './register/Register'
 import AdminHome from './admin-home'
 import PacientHome from './pacient-home'
+import Devices from './devices-map/devices'
+import PacientChat from './pacient-chat/pacient-chat'
+import AdminChat from './admin-chat/admin-chat'
 
 class App extends React.Component {
 
@@ -38,6 +41,21 @@ class App extends React.Component {
                   exact
                   path='/login'
                   element={<Login />}
+                />
+                <Route 
+                  exact
+                  path='/devices'
+                  element={<Devices />}
+                />
+                 <Route 
+                  exact
+                  path='/pacient/chat'
+                  element={<PacientChat />}
+                />
+                 <Route 
+                  exact
+                  path='/messages'
+                  element={<AdminChat />}
                 />
             </Routes>
           </div>

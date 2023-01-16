@@ -3,11 +3,15 @@ import NavigationBar from './commons/navigation-bar-admin';
 import Footer from './commons/footer'
 import './index.css'
 import image from './commons/doctor.jpg'
+import {useNavigate} from 'react-router-dom';
 
-class AdminHome extends React.Component {
+export default function AdminHome() {
 
+    const navigate = useNavigate();
 
-    render() {
+    const goToChat = () => {
+        navigate('/messages');
+      };
 
         return (
             <div>
@@ -39,7 +43,7 @@ class AdminHome extends React.Component {
                     </div>
                     <div className="treatment-plan">
                         <h3>SEE YOUR PRIVATE MESSAGES</h3>
-                        <button style={{width: "310px", margin: "0px 0px 0px 35px"}}>MESSAGES</button>
+                        <button onClick={goToChat} style={{width: "310px", margin: "0px 0px 0px 35px"}}>MESSAGES</button>
                     </div>
                 </div>
             </div>
@@ -48,6 +52,4 @@ class AdminHome extends React.Component {
             </div>
         )
     };
-}
 
-export default AdminHome

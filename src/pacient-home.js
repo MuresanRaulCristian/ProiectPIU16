@@ -3,11 +3,15 @@ import NavigationBar from './commons/navigation-bar-pacient';
 import Footer from './commons/footer'
 import './index.css'
 import image from './commons/doctor.jpg'
+import {useNavigate} from 'react-router-dom';
 
-class PacientHome extends React.Component {
+export default function PacientHome() {
 
+    const navigate = useNavigate();
 
-    render() {
+    const goToChat = () => {
+        navigate('/pacient/chat');
+      };
 
         return (
             <div>
@@ -27,7 +31,7 @@ class PacientHome extends React.Component {
                         <h4 style={{marginLeft: "20px", color: "black", fontFamily: "MaitreeBold"}}>DR. MEREDITH GREY</h4>
                         <h6>HEAD OF GENERAL SURGERY</h6>
                         <h6>Rating: 5/5</h6>
-                        <button>CONTACT</button>
+                        <button onClick={goToChat}>CONTACT</button>
                     </div>
                     </div>
                 </div>
@@ -47,6 +51,4 @@ class PacientHome extends React.Component {
             </div>
         )
     };
-}
 
-export default PacientHome
