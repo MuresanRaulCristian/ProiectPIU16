@@ -20,7 +20,8 @@ export default function PacientHome() {
                 <h1>Welcome back, George!</h1>
             </div>
             <div className="buttons-zone">
-
+                    <img className='button-images' src={require("./emergency/images/emergency.png")} onClick={() => window.location.href='/emergency'}/>
+                    <img className='button-images' src={require("./emergency/images/call.png")} onClick={() => window.location.href='/emergency/call'}/>
             </div>
             <div>
                 <div className="my-doctor">

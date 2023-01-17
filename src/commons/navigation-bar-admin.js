@@ -21,6 +21,8 @@ const NavigationBarAdmin = () => {
                             <a style={{textDecoration: "none"}} href="/devices">DEVICES</a>
                             <a style={{textDecoration: "none"}} href="/pacients">PACIENTS</a>
                             <a style={{textDecoration: "none"}} href="/messages">MESSAGES</a>
+                            <a style={{textDecoration: "none"}} href="/analysis">ANALYSIS</a>
+
                          </div>}
                         <NavLink style={{textDecoration: "none", padding:"50px 25px 30px 25px", color: "white"}} onMouseOver={() => setPacientsDropdownOpen(false)} href="/appointments">APPOINTMENTS</NavLink>
                 </Nav>
