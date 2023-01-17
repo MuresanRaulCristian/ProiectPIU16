@@ -14,6 +14,9 @@ import PacientChat from './pacient-chat/pacient-chat'
 import AdminChat from './admin-chat/admin-chat'
 import Emergency from './emergency/Emergency'
 import EmergencyCall from './emergency/EmergencyCall'
+import ReviewForm from './pacient-forms/review-form'
+import Form from './pacient-forms/form'
+
 
 class App extends React.Component {
 
@@ -96,6 +99,16 @@ class App extends React.Component {
                   element={<AdminChat />}
                 />
 
+                <Route 
+                  exact
+                  path='/pacient/review-form'
+                  element={<ReviewForm />}
+                />
+                <Route 
+                  exact
+                  path='/pacient/form'
+                  element={<Form />}
+                />
             </Routes>
           </div>
         </Router>
