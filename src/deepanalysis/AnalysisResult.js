@@ -20,8 +20,8 @@ export default function AnalysisResult() {
     }
     return (<div >
         <NavigationBarAdmin></NavigationBarAdmin>
-        <h1>Deep Analysis</h1>
-        <h1>Deep Analysis</h1>
+        <h1 className='h1title'>Deep Analysis</h1>
+        <h1 className='h1title'>Deep Analysis</h1>
 
         <div className='treatment'>
         <div className='image-container'>
