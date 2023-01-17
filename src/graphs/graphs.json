@@ -8,21 +8,19 @@
   {
     "show": true,
     "text": "Heart Rate",
-    "src":"./images/graph2.png",
+    "src": "./images/graph2.png",
     "id": 1
-
   },
   {
     "show": true,
     "text": "Nutrients",
     "src": "./images/graph3.png",
     "id": 2
-
   },
   {
     "show": true,
     "text": "Oxygen Levels - Blood",
-    "src":"./images/graph4.png",
+    "src": "./images/graph4.png",
     "id": 3
   }
 ]

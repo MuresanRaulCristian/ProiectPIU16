@@ -4,7 +4,7 @@ import '../index.css'
 const Footer = () => {
     return (
         <div className="footer" expand="md">
-            <h3 style={{ marginLeft: "43%"}}>PIU 2023 - PROIECT 16</h3>
+            <h3 style={{marginLeft: "43%"}}>PIU 2023 - PROIECT 16</h3>
         </div>
     )
 }

@@ -19,9 +19,9 @@
     height: 100px;
     margin-left: 90px;
     top: 800px;
-    
+
     background: #D9D9D9;
-    border-radius: 40px 40px 40px 0px;  
+    border-radius: 40px 40px 40px 0px;
 }
 
 .input-chat {
@@ -30,7 +30,7 @@
     height: 68px;
     margin-left: 20px;
     margin-top: 10px;
-    
+
     background: #FFFFFF;
     border-radius: 10px;
     border: none;
@@ -61,24 +61,24 @@
     height: 108px;
     margin-top: 300px;
     margin-left: 900px;
-    
+
     font-family: 'Maitree';
     font-style: normal;
     font-weight: 600;
     font-size: 22px;
     line-height: 36px;
     letter-spacing: 0.01em;
-    
+
     color: #000000;
 }
 
 .doctor-info {
- 
+
     width: 448px;
     height: 223px;
     margin-left: 900px;
     margin-top: 125px;
-    
+
     background: #5CA4CC;
     border-radius: 10px;
     filter: drop-shadow(5px 4px 14px #D6D6D6);
@@ -88,7 +88,8 @@ p {
     color: black;
     margin-left: 15px;
 }
-.doctor-image{
+
+.doctor-image {
     position: absolute;
     left: 146.87px;
     top: 349.62px;
@@ -97,8 +98,9 @@ p {
     margin-left: 170;
     border-radius: 10px;
 }
-.wrapper{
-    
+
+.wrapper {
+
     position: absolute;
     width: 1272px;
     height: 669px;
@@ -110,8 +112,9 @@ p {
     background: #5CA4CC;
     border-radius: 15px;
 }
-.controller{
-    position:absolute;
+
+.controller {
+    position: absolute;
     width: 331px;
     height: 88px;
     left: 100px;

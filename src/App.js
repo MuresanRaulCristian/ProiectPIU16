@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Login from './login/Login'
 import Graph from './graphs/Graph'
 import Graph1 from './graphs/Graph1'
@@ -25,127 +25,126 @@ import Form from './pacient-forms/form'
 
 class App extends React.Component {
 
-  constructor(props) {
-    super(props)
-    this.state = {
+    constructor(props) {
+        super(props)
+        this.state = {}
     }
-  }
 
-  render() {
-    return (
-      <div>
-        <Router>
-          <div>
-            <Routes>
-              <Route 
-                  exact
-                  path='/register'
-                  element={<Register />}
-              />
-              <Route 
-                  exact
-                  path='/'
-                  element={<AdminHome />}
-                />
-                <Route 
-                  exact
-                  path='/pacient'
-                  element={<PacientHome />}
-                />
-               <Route 
-                  exact
-                  path='/login'
-                  element={<Login />}
-                />
+    render() {
+        return (
+            <div>
+                <Router>
+                    <div>
+                        <Routes>
+                            <Route
+                                exact
+                                path='/register'
+                                element={<Register/>}
+                            />
+                            <Route
+                                exact
+                                path='/'
+                                element={<AdminHome/>}
+                            />
+                            <Route
+                                exact
+                                path='/pacient'
+                                element={<PacientHome/>}
+                            />
+                            <Route
+                                exact
+                                path='/login'
+                                element={<Login/>}
+                            />
 
-              <Route
-                  exact
-                  path='/doctor-list'
-                  element={<DoctorList />}
-                />
-              <Route
-                exact
-                path='/doctor-details/:id'
-               element={<DoctorDetails />}
-              />
-              <Route
-                exact
-                path='/patient-details'
-               element={<PatientDetails />}
-              />
-              <Route
-                exact
-                path='/farmacy'
-               element={<MedicineListFarmacy />}
-              />
-              <Route
-                exact
-                path='/checkout'
-               element={<Checkout />}
-              />
+                            <Route
+                                exact
+                                path='/doctor-list'
+                                element={<DoctorList/>}
+                            />
+                            <Route
+                                exact
+                                path='/doctor-details/:id'
+                                element={<DoctorDetails/>}
+                            />
+                            <Route
+                                exact
+                                path='/patient-details'
+                                element={<PatientDetails/>}
+                            />
+                            <Route
+                                exact
+                                path='/farmacy'
+                                element={<MedicineListFarmacy/>}
+                            />
+                            <Route
+                                exact
+                                path='/checkout'
+                                element={<Checkout/>}
+                            />
 
-                   <Route 
-                  exact
-                  path='/graphs'
-                  element={<Graph />}
-                />
-                <Route
-                    exact
-                    path='/graph/:id'
-                    element={<Graph1 />}
-                />
-                <Route
-                    exact
-                    path='/analysis'
-                    element={<DeepAnalysis />}
-                />
-                <Route
-                    exact
-                    path='/analysis/result'
-                    element={<AnalysisResult />}
-                />
-                <Route
-                    exact
-                    path='/emergency'
-                    element={<Emergency />}
-                />
-                <Route 
-                  exact
-                  path='/emergency/call'
-                  element={<EmergencyCall />}
-                />
-                <Route 
-                  exact
-                  path='/devices'
-                  element={<Devices />}
-                />
-                 <Route 
-                  exact
-                  path='/pacient/chat'
-                  element={<PacientChat />}
-                />
-                 <Route 
-                  exact
-                  path='/messages'
-                  element={<AdminChat />}
-                />
+                            <Route
+                                exact
+                                path='/graphs'
+                                element={<Graph/>}
+                            />
+                            <Route
+                                exact
+                                path='/graph/:id'
+                                element={<Graph1/>}
+                            />
+                            <Route
+                                exact
+                                path='/analysis'
+                                element={<DeepAnalysis/>}
+                            />
+                            <Route
+                                exact
+                                path='/analysis/result'
+                                element={<AnalysisResult/>}
+                            />
+                            <Route
+                                exact
+                                path='/emergency'
+                                element={<Emergency/>}
+                            />
+                            <Route
+                                exact
+                                path='/emergency/call'
+                                element={<EmergencyCall/>}
+                            />
+                            <Route
+                                exact
+                                path='/devices'
+                                element={<Devices/>}
+                            />
+                            <Route
+                                exact
+                                path='/pacient/chat'
+                                element={<PacientChat/>}
+                            />
+                            <Route
+                                exact
+                                path='/messages'
+                                element={<AdminChat/>}
+                            />
 
-                <Route 
-                  exact
-                  path='/pacient/review-form'
-                  element={<ReviewForm />}
-                />
-                <Route 
-                  exact
-                  path='/pacient/form'
-                  element={<Form />}
-                />
-            </Routes>
-          </div>
-        </Router>
-      </div>
-    )
-  }
+                            <Route
+                                exact
+                                path='/pacient/review-form'
+                                element={<ReviewForm/>}
+                            />
+                            <Route
+                                exact
+                                path='/pacient/form'
+                                element={<Form/>}
+                            />
+                        </Routes>
+                    </div>
+                </Router>
+            </div>
+        )
+    }
 }
 
 export default App

@@ -11,35 +11,39 @@ export default function PacientHome() {
 
     const goToChat = () => {
         navigate('/pacient/chat');
-      };
+    };
 
-        return (
-            <div>
+    return (
+        <div>
             <NavigationBar></NavigationBar>
             <div className="welcome-text">
                 <h1>Welcome back, George!</h1>
             </div>
             <div className="buttons-zone">
-                    <img className='button-images' src={require("./emergency/images/emergency.png")} onClick={() => window.location.href='/emergency'}/>
-                    <img className='button-images' src={require("./emergency/images/call.png")} onClick={() => window.location.href='/emergency/call'}/>
+                <img className='button-images' src={require("./emergency/images/emergency.png")}
+                     onClick={() => window.location.href = '/emergency'}/>
+                <img className='button-images' src={require("./emergency/images/call.png")}
+                     onClick={() => window.location.href = '/emergency/call'}/>
             </div>
             <div>
                 <div className="my-doctor">
                     <h4>MY DOCTOR</h4>
-                    <div style={{ display: "flex", flexDirection: "row"}}>
-                    <img src={image} alt="doctorImg" className="doctorImg"/>
-                    <div>
-                        <h4 style={{marginLeft: "20px", color: "black", fontFamily: "MaitreeBold"}}>DR. MEREDITH GREY</h4>
-                        <h6 style={{marginLeft: "20px"}}>HEAD OF GENERAL SURGERY</h6>
-                        <h6 style={{marginLeft: "20px"}}>Rating: 5/5</h6>
-                        <button onClick={goToChat}>CONTACT</button>
-                    </div>
+                    <div style={{display: "flex", flexDirection: "row"}}>
+                        <img src={image} alt="doctorImg" className="doctorImg"/>
+                        <div>
+                            <h4 style={{marginLeft: "20px", color: "black", fontFamily: "MaitreeBold"}}>DR. MEREDITH
+                                GREY</h4>
+                            <h6 style={{marginLeft: "20px"}}>HEAD OF GENERAL SURGERY</h6>
+                            <h6 style={{marginLeft: "20px"}}>Rating: 5/5</h6>
+                            <button onClick={goToChat}>CONTACT</button>
+                        </div>
                     </div>
                 </div>
                 <div>
                     <div className="new-notification">
                         <h3>YOU HAVE A NEW NOTIFICATION!</h3>
-                        <p style={{marginLeft: "40px"}}>Please fill the following form about the services we have offered you.</p>
+                        <p style={{marginLeft: "40px"}}>Please fill the following form about the services we have
+                            offered you.</p>
                         <a style={{marginLeft: "40px"}} href="/pacient/review-form">CLICK HERE</a>
                     </div>
                     <div className="treatment-plan">
@@ -49,7 +53,7 @@ export default function PacientHome() {
                 </div>
             </div>
             <Footer></Footer>
-            </div>
-        )
-    };
+        </div>
+    )
+};
 

@@ -8,7 +8,6 @@
 }
 
 
-
 .search {
     /* Rectangle 3 */
 
@@ -27,26 +26,30 @@
     border: 1px solid rgba(0, 0, 0, 0.4);
     border-radius: 39px;
 }
-.search>icon{
+
+.search > icon {
     width: 22.8px;
     height: 24px;
 }
-.search-text{
+
+.search-text {
     font-family: 'Khmer';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     border-left: 1px solid rgba(0, 0, 0, 0.7);;
     padding-left: 10px;
-    padding-top: 10px   ;
+    padding-top: 10px;
     height: 42px;
 }
-.grid{
+
+.grid {
     margin: auto;
     width: 50%;
 
 }
-.dropdown{
+
+.dropdown {
     width: 125px;
     height: 45px;
     padding-left: 10px;
@@ -62,7 +65,8 @@
 
     letter-spacing: 0.01em;
 }
-.image-text{
+
+.image-text {
     padding: 10px 11px 1px 20px;
     float: left;
     font-family: 'Khmer';
@@ -74,7 +78,8 @@
 
 
 }
-.big-text{
+
+.big-text {
     font-family: 'Khmer';
     font-style: normal;
     font-weight: 400;
@@ -82,10 +87,11 @@
     line-height: 51px;
     margin-left: -200px;
 
-    padding-right:  100px;
+    padding-right: 100px;
     letter-spacing: 0.01em;
 }
-.time-select{
+
+.time-select {
     background: #ECECEC;
     border: 1px solid rgba(0, 0, 0, 0.4);
     border-radius: 39px;
@@ -99,9 +105,9 @@
     flex-wrap: wrap;
 
 
-
 }
-.time-select-text{
+
+.time-select-text {
 
     border-right: 1px solid rgba(0, 0, 0, 0.7);;
     height: 42px;
@@ -115,30 +121,33 @@
     padding-left: 10px;
 
 }
-.card{
+
+.card {
     display: inline-flex;
     flex-direction: column;
 }
-.big-card{
+
+.big-card {
     display: inline-flex;
     flex-direction: row;
 }
-.small-image{
+
+.small-image {
     width: 700px;
     height: 325px;
 }
-.big-image{
+
+.big-image {
     padding-top: 70px;
     width: 1300px;
     height: 604px;
 }
 
-.dropdown:focus{
+.dropdown:focus {
     border: 0px solid;
     outline: 0px;
 
 }
-
 
 
 ul li {
