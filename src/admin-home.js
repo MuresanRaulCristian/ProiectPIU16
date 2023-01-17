@@ -17,9 +17,7 @@ export default function AdminHome() {
             <div>
             <div>
             <NavigationBar></NavigationBar>
-            <div className="welcome-text">
-                <h1>Welcome back, Dr. Meredith!</h1>
-            </div>
+            <h1 className="welcome-text">Welcome back, Dr. Meredith!</h1>
             <div className="buttons-zone">
 
             </div>

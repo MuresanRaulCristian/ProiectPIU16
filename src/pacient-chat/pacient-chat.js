@@ -1,7 +1,6 @@
 import React from 'react';
 import NavigationBar from '../commons/navigation-bar-pacient';
 import Footer from '../commons/footer'
-import { useState } from "react";
 import './pacient-chat.css'
 import image from '../commons/doctor.jpg'
 import chatLogo from '../commons/chatLogo.png'

@@ -43,7 +43,7 @@
     letter-spacing: 0.01em;
 }
 
-.chat-person {
+.chat-admin {
     display: flex;
     flex-direction: row;
     margin: 20px 20px 20px 240px;
@@ -74,7 +74,7 @@
     color: #000000;
 }
 
-.doctor-info {
+.pacient-info {
     position: absolute;
     width: 448px;
     height: 223px;

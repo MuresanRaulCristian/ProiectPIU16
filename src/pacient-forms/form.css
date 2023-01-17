@@ -1,0 +1,125 @@
+.form {
+    width: 1308px;
+    height: 700px;
+    margin-left: 90px;
+    margin-top: 250px;
+    font-family: 'Maitree';
+    font-style: normal;
+    background: #D9D9D9;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 10px 10px 0px 0px; 
+}
+
+input[type="radio"] {
+    width:20px;
+    height:20px; 
+}
+
+input[type="checkbox"] {
+    width:15px;
+    height:15px; 
+    margin-right: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 0px;
+}
+
+.button-form {
+    position: absolute;
+    width: 277px;
+    height: 61px;
+    left: 1095px;
+    margin-top: -20px;
+    
+    background: #009A2B;
+    color: white;
+    border-radius: 10px;
+}
+
+.first-page input[type="radio"] {
+    display: none;
+}
+
+.first-page input[type="radio"]:checked + .radio-btns {
+    background-color: black;
+    width: 67px;
+    height: 67px;
+    border-radius: 180px;
+}
+
+.form label {
+    margin-left: 100px;
+}
+
+.second-form label {
+    margin-left: 30px;
+    font-family: 'MaitreeBold';
+    font-style: bold;
+    color: #000000;
+}
+
+.form input {
+    margin: 20px 40px 50px 150px;
+}
+
+.radio-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input[type="radio"] {
+    font-size: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.simptoms {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox {
+    margin-top: 40px;
+}
+
+.second-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px;
+}
+ h1 {
+    position: relative;
+    font-family: 'MaitreeBold';
+    font-style: bold;
+    font-size: 30px;
+    margin: 0px 0px 0px 30px;
+    margin-left: 95px;
+    top: 35px;
+    color: #000000;
+ }
+
+.first-page {
+    width: 593px;
+    height: 595px;
+    margin-left: 90px;
+    margin-top: 70px;
+    
+    background: #D9D9D9;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.second-page {
+    width: 608px;
+    height: 595px;
+    margin-top: 70px;
+    margin-right: 90px;
+    
+    background: #D9D9D9;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px 10px 0px 0px; 
+}
