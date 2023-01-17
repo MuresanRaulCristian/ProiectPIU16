@@ -1,0 +1,214 @@
+.form-background{
+    width: 732px;
+    height: 675px;
+    padding: 20px;
+    background: #5CA4CC;
+    box-shadow: 0px 6px 17px -2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+}
+.formd{
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+
+    font-family: 'Khmer';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 41px;
+    color: #FFFFFF;
+    }
+.formd input{
+    background: #ECECEC;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 39px;
+    padding-left: 13px;
+    font-family: 'Khmer';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+}
+
+.h1title{
+    font-family: 'Khmer';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    padding: 20px;
+    padding-left: 150px
+
+}
+
+.formd select{
+    padding-left: 10px;
+
+    background: #ECECEC;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 39px;
+    color: #000000;
+    font-family: 'Khmer';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.measurements{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto ;
+    row-gap: 30px;
+
+}
+.files{
+    display: grid;
+    grid-template-columns: auto auto auto auto  ;
+    align-items: center;
+    padding-left: 30px;
+    row-gap: 20px;
+
+}
+.inputs{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    row-gap: 100px;
+    
+}
+.measure{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    
+}
+.browse-btn{
+    width: 94px;
+    height: 35px;
+    left: 620px;
+    top: 859px;;
+    background: #ECECEC;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 39px;
+    
+    font-family: 'Khmer';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    color: #000000;
+}
+input[type="submit"]{
+    margin-top: -95px;
+    margin-left: 900px;
+    width: 167.92px;
+    height: 60.25px;
+    left: 1230px;
+    top: 864px;
+
+    background: #99DAFF;
+    border: 1px solid #56A3CE;
+    border-radius: 8px;
+
+    text-align: center;
+    justify-content: center;
+
+
+
+    font-family: 'Khmer';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+
+    color: #990D0D;
+}
+.btn-download{
+    margin-top: -65px;
+    margin-left: 1000px;
+    width: 331px;
+    height: 60.25px;
+    left: 1230px;
+    top: 864px;
+
+    background: #99DAFF;
+    border: 1px solid #56A3CE;
+    border-radius: 8px;
+
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 13px;
+
+
+    font-family: 'Khmer';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+
+    color: #990D0D;
+}
+.btn-download:hover{
+    background: #bce6ff;
+}
+input[type="submit"]:hover{
+    background: #bce6ff;
+
+}
+.browse-btn:hover{
+    background: #c7c7c7;
+}
+.image-container{
+    padding-left: 120px;
+}
+.imgres{
+    border-radius: 10px;
+    overflow: hidden;
+    width: 686px;
+    width: 605px;
+
+
+}
+.result-container{
+
+    background: #5CA4CC;
+    box-shadow: 0px 6px 17px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 557px;
+    height: 261px;
+    left: 841px;
+    top: 263px;
+    font-family: 'Khmer';
+    font-style: normal;
+    color: #FFFFFF;
+
+}
+ul{
+    padding: 0px;
+    padding-left: 50px;
+}
+li 
+{
+    padding: 10px;
+}
+
+.treatment{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 100px;
+}
