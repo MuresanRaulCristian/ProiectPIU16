@@ -20,7 +20,7 @@ export default function ReviewForm() {
     return (
         <div>
             <NavigationBar></NavigationBar>
-            <h1 className="welcome-text" style={{marginTop: "40px"}}>REVIEW FORM FOR THE SERVICES OFFERED BY THE "LOVE FOR PEOPLE" HOSPITAL</h1>
+            <h1 className="h1" style={{marginTop: "140px"}}>REVIEW FORM FOR THE SERVICES OFFERED BY THE "LOVE FOR PEOPLE" HOSPITAL</h1>
             <form className="form" onSubmit={handleSubmit}>
             <br></br>
                 <label>Please select the circle that suits your oppinion the best. (1 - Very bad, 5 - Very Good)</label>

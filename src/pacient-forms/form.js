@@ -24,7 +24,7 @@ export default function Form() {
     return (
         <div>
             <NavigationBar></NavigationBar>
-            <h1 style={{ marginTop: "100px" }}>HOW DO YOU FEEL TODAY?</h1>
+            <h1 className="h1" style={{ marginTop: "100px" }}>HOW DO YOU FEEL TODAY?</h1>
             <button className="button-form" type="submit">Submit</button>
             <form className='second-form' onSubmit={handleSubmit}>
                 <div>
