@@ -7,6 +7,8 @@ import PacientHome from './pacient-home'
 import Devices from './devices-map/devices'
 import PacientChat from './pacient-chat/pacient-chat'
 import AdminChat from './admin-chat/admin-chat'
+import ReviewForm from './pacient-forms/review-form'
+import Form from './pacient-forms/form'
 
 class App extends React.Component {
 
@@ -56,6 +58,16 @@ class App extends React.Component {
                   exact
                   path='/messages'
                   element={<AdminChat />}
+                />
+                <Route 
+                  exact
+                  path='/pacient/review-form'
+                  element={<ReviewForm />}
+                />
+                <Route 
+                  exact
+                  path='/pacient/form'
+                  element={<Form />}
                 />
             </Routes>
           </div>

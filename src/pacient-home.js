@@ -29,8 +29,8 @@ export default function PacientHome() {
                     <img src={image} alt="doctorImg" className="doctorImg"/>
                     <div>
                         <h4 style={{marginLeft: "20px", color: "black", fontFamily: "MaitreeBold"}}>DR. MEREDITH GREY</h4>
-                        <h6>HEAD OF GENERAL SURGERY</h6>
-                        <h6>Rating: 5/5</h6>
+                        <h6 style={{marginLeft: "20px"}}>HEAD OF GENERAL SURGERY</h6>
+                        <h6 style={{marginLeft: "20px"}}>Rating: 5/5</h6>
                         <button onClick={goToChat}>CONTACT</button>
                     </div>
                     </div>
@@ -38,8 +38,8 @@ export default function PacientHome() {
                 <div>
                     <div className="new-notification">
                         <h3>YOU HAVE A NEW NOTIFICATION!</h3>
-                        <p>Please fill the following form about the services we have offered you.</p>
-                        <a>CLICK HERE</a>
+                        <p style={{marginLeft: "40px"}}>Please fill the following form about the services we have offered you.</p>
+                        <a style={{marginLeft: "40px"}} href="/pacient/review-form">CLICK HERE</a>
                     </div>
                     <div className="treatment-plan">
                         <h3>SEE YOUR TREATMENT PLAN</h3>
