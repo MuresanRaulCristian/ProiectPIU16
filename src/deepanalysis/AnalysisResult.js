@@ -25,7 +25,7 @@ export default function AnalysisResult() {
 
         <div className='treatment'>
         <div className='image-container'>
-            <img src={require("./images/result.png")} />
+            <img src={require("./images/result.png")}  className='imgres'/>
         </div>
         <div className='result-container'>
             <ul>

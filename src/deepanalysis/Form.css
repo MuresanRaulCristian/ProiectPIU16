@@ -10,7 +10,7 @@
     margin: auto;
 
 }
-form{
+.formd{
     display: flex;
     flex-direction: column;
     row-gap: 60px;
@@ -22,7 +22,7 @@ form{
     line-height: 41px;
     color: #FFFFFF;
     }
-form input{
+.formd input{
     background: #ECECEC;
     border: 1px solid rgba(0, 0, 0, 0.4);
     border-radius: 39px;
@@ -44,7 +44,7 @@ h1{
 
 }
 
-form select{
+.formd select{
     padding-left: 10px;
 
     background: #ECECEC;
@@ -175,7 +175,7 @@ input[type="submit"]:hover{
 .image-container{
     padding-left: 120px;
 }
-img{
+.imgres{
     border-radius: 10px;
     overflow: hidden;
     width: 686px;
