@@ -18,11 +18,8 @@ export default function AdminHome() {
             <div>
             <NavigationBar></NavigationBar>
             <h1 className="welcome-text" style={{fontSize: "3em"}}>Welcome back, Dr. Meredith!</h1>
-            <div className="buttons-zone">
-
-            </div>
             <div>
-                <div className="my-doctor">
+                <div className="my-data">
                     <h4>MY DATA</h4>
                     <div style={{ display: "flex", flexDirection: "row"}}>
                     <img style={{marginLeft: "30px"}} src={image} alt="doctorImg" className="doctorImg"/>
@@ -35,11 +32,11 @@ export default function AdminHome() {
                     </div>
                 </div>
                 <div>
-                    <div className="new-notification">
+                    <div className="new-notification-doctor">
                         <h3>EMERGENCIES</h3>
                         <p style={{marginLeft: "40px"}}>THERE ARE 0 EMERGENCIES.</p>
                     </div>
-                    <div className="treatment-plan">
+                    <div className="treatment-plan-doctor">
                         <h3>SEE YOUR PRIVATE MESSAGES</h3>
                         <button onClick={goToChat} style={{width: "310px", margin: "0px 0px 0px 35px"}}>MESSAGES</button>
                     </div>

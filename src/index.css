@@ -98,11 +98,11 @@ a:hover {
 .welcome-text {
   position: absolute;
   left: 90px;
-  top: 110px;
-
+  top: 100px;
+  width: 900px;
   font-family: 'Maitree';
   font-style: normal;
-  font-size: 25px;
+  font-size: 2em;
   line-height: 94px;
   letter-spacing: 0.01em;
   text-shadow: 1px 1px 2px #D6D6D6;
@@ -134,8 +134,19 @@ a:hover {
   position: absolute;
   width: 42%;
   height: 174px;
-  left: 820px;
-  top: 520px;
+  margin-left: 820px;
+  margin-top: 520px;
+
+  background: #5CA4CC;
+  border-radius: 10px 0px 10px 10px;
+}
+
+.new-notification-doctor {
+  position: absolute;
+  width: 42%;
+  height: 174px;
+  margin-left: 820px;
+  margin-top: 470px;
 
   background: #5CA4CC;
   border-radius: 10px 0px 10px 10px;
@@ -153,12 +164,35 @@ a:hover {
   filter: drop-shadow(5px 4px 14px #D6D6D6);
 }
 
+.my-data {
+  position:absolute;
+  width: 42%;
+  height: 367px;
+  margin-left: 90px;
+  margin-top: 280px;
+
+  background: #5CA4CC;
+  border-radius: 10px;
+  filter: drop-shadow(5px 4px 14px #D6D6D6); 
+}
+
 .treatment-plan {
   position: absolute;
   width: 42%;
   height: 168px;
   left: 820px;
   top: 720px;
+
+  background: #5CA4CC;
+  border-radius: 10px;
+}
+
+.treatment-plan-doctor {
+  position: absolute;
+  width: 42%;
+  height: 168px;
+  margin-left: 820px;
+  margin-top: 300px;
 
   background: #5CA4CC;
   border-radius: 10px;
@@ -233,7 +267,7 @@ button:hover {
   position: absolute;
   width: 140px;
   height: 205px;
-  left: 345px;
+  left: 355px;
   top: 70px;
   background: #F5F5F5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
