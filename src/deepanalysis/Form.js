@@ -24,7 +24,7 @@ export default function DeepAnalysis() {
 
         <div className={'form-background'}>
         
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form className='formd' onSubmit={handleSubmit(onSubmit)}>
             <div className='inputs'>
             <label>Targeted System</label>
             <select {...register("Targeted System")}>
