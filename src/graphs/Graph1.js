@@ -6,6 +6,8 @@ import {render} from "react-dom";
 import cards from './graphs.json'
 import {useParams} from "react-router-dom";
 import NavigationBarAdmin from '../commons/navigation-bar-admin';
+import Footer from '../commons/footer';
+
 const Graph1 = () => {
     const [inputText, setInputText] = useState("");
     const [isActive, setIsActive] = useState(false);
@@ -99,6 +101,7 @@ const Graph1 = () => {
                 <img src={require("" + cards[id].src)} className={'big-image'}></img>
             </div>
 
+            <Footer ></Footer>
 
 
 

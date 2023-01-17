@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import "./Form.css"
 import { Waves } from 'loading-animations-react';
 import NavigationBarAdmin from '../commons/navigation-bar-admin';
+import Footer from '../commons/footer';
 
 
 export default function AnalysisResult() {
@@ -39,6 +40,7 @@ export default function AnalysisResult() {
         </div>
         </div>
         <button className='btn-download'>DOWNLOAD</button>
+        <Footer ></Footer>
 
     </div>
     )

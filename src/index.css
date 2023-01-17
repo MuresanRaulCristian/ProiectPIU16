@@ -108,9 +108,20 @@ a:hover {
   text-shadow: 1px 1px 2px #D6D6D6;
   color: #000000;
 }
-
+.buttons-container{
+  display: flex;
+}
+.button-images{
+  width: 150px;
+  height: 150px;
+}
 .buttons-zone {
   position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
   width: 1370px;
   height: 180px;
   left: 90px;

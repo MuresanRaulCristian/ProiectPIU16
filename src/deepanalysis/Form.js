@@ -2,6 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import NavigationBarAdmin from '../commons/navigation-bar-admin';
 import "./Form.css"
+import Footer from '../commons/footer';
 
 export default function DeepAnalysis() {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -69,6 +70,8 @@ export default function DeepAnalysis() {
             <input onClick={  () => window.location.href='/analysis/result'} type="submit" value="RUN"/>
         </form>
         </div>
+        <Footer ></Footer>
+
         </div>
     );
 }

@@ -12,6 +12,8 @@ import PacientHome from './pacient-home'
 import Devices from './devices-map/devices'
 import PacientChat from './pacient-chat/pacient-chat'
 import AdminChat from './admin-chat/admin-chat'
+import Emergency from './emergency/Emergency'
+import EmergencyCall from './emergency/EmergencyCall'
 
 class App extends React.Component {
 
@@ -68,6 +70,16 @@ class App extends React.Component {
                     path='/analysis/result'
                     element={<AnalysisResult />}
                 />
+                <Route
+                    exact
+                    path='/emergency'
+                    element={<Emergency />}
+                />
+                <Route 
+                  exact
+                  path='/emergency/call'
+                  element={<EmergencyCall />}
+                />
                 <Route 
                   exact
                   path='/devices'
@@ -83,6 +95,7 @@ class App extends React.Component {
                   path='/messages'
                   element={<AdminChat />}
                 />
+
             </Routes>
           </div>
         </Router>

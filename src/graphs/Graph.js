@@ -5,6 +5,9 @@ import {Icon} from '@iconify/react';
 import {render} from "react-dom";
 import cards from './graphs.json'
 import NavigationBarAdmin from '../commons/navigation-bar-admin';
+import Footer from '../commons/footer';
+
+
 const Graph = () => {
     const [inputText, setInputText] = useState("");
     const [isActive, setIsActive] = useState(false);
@@ -41,6 +44,7 @@ const Graph = () => {
                   justify="center"
 
             >
+                
                 {filteredData.map((item) => (
                     <Grid item xs={6} align="center" key={item.src}>
                         <div className={'card'} onClick={() => window.location.href='/graph/' + item.id}>
@@ -82,6 +86,7 @@ const Graph = () => {
             </div>
             <List input={inputText} />
 
+            <Footer ></Footer>
 
 
 
