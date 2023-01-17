@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import {React, useState} from 'react';
 import NavigationBar from '../commons/navigation-bar-pacient';
 import Footer from '../commons/footer'
 import '../index.css'
@@ -13,7 +13,7 @@ export default function Form() {
     const [formData, setFormData] = useState({});
 
     const handleChange = (event) => {
-        setFormData({ ...formData, [event.target.name]: event.target.value });
+        setFormData({...formData, [event.target.name]: event.target.value});
     };
 
     const handleSubmit = (event) => {
@@ -24,7 +24,7 @@ export default function Form() {
     return (
         <div>
             <NavigationBar></NavigationBar>
-            <h1 className="h1" style={{ marginTop: "100px" }}>HOW DO YOU FEEL TODAY?</h1>
+            <h1 className="h1" style={{marginTop: "100px"}}>HOW DO YOU FEEL TODAY?</h1>
             <button className="button-form" type="submit">Submit</button>
             <form className='second-form' onSubmit={handleSubmit}>
                 <div>
@@ -72,64 +72,71 @@ export default function Form() {
                             </div>
                         </label>
                         <div>
-                        <br></br>
+                            <br></br>
                             <label className='simptoms'>
                                 DID YOU HAVE ONE OF THESE SIMPTOMS TODAY?:
                                 <div className='checkbox'>
-                                <input
-                                    type="checkbox"
-                                    name="question2"
-                                    value="option1"
-                                    onChange={handleChange}
-                                />
-                                NAUSEA
+                                    <input
+                                        type="checkbox"
+                                        name="question2"
+                                        value="option1"
+                                        onChange={handleChange}
+                                    />
+                                    NAUSEA
                                 </div>
                                 <div className='checkbox'>
-                                <input
-                                    type="checkbox"
-                                    name="question2"
-                                    value="option2"
-                                    onChange={handleChange}
-                                />
-                                HEADACHE
+                                    <input
+                                        type="checkbox"
+                                        name="question2"
+                                        value="option2"
+                                        onChange={handleChange}
+                                    />
+                                    HEADACHE
                                 </div>
                                 <div className='checkbox'>
-                                <input
-                                    type="checkbox"
-                                    name="question2"
-                                    value="option3"
-                                    onChange={handleChange}
-                                />
-                                MUSCULAR PAIN
+                                    <input
+                                        type="checkbox"
+                                        name="question2"
+                                        value="option3"
+                                        onChange={handleChange}
+                                    />
+                                    MUSCULAR PAIN
                                 </div>
                                 <div className='checkbox'>
-                                <input
-                                    type="checkbox"
-                                    name="question2"
-                                    value="option4"
-                                    onChange={handleChange}
-                                />
-                                DIARHEA
+                                    <input
+                                        type="checkbox"
+                                        name="question2"
+                                        value="option4"
+                                        onChange={handleChange}
+                                    />
+                                    DIARHEA
                                 </div>
                                 <div className='checkbox'>
-                                <input
-                                    type="checkbox"
-                                    name="question2"
-                                    value="option5"
-                                    onChange={handleChange}
-                                />
-                                DIZZINESS
+                                    <input
+                                        type="checkbox"
+                                        name="question2"
+                                        value="option5"
+                                        onChange={handleChange}
+                                    />
+                                    DIZZINESS
                                 </div>
                             </label>
                         </div>
                     </div>
                 </div>
-                
+
                 <div className='second-page'>
                     <br></br>
                     <br></br>
                     <label>DO YOU HAVE ADDITIONAL INFORMATION?</label>
-                    <textarea initialValue="Write here..." style={{fontFamily:"Maitree", width: "532px", height: "427px", margin: "40px 20px 20px 30px", borderRadius: "10px", border: "0px"}}>
+                    <textarea initialValue="Write here..." style={{
+                        fontFamily: "Maitree",
+                        width: "532px",
+                        height: "427px",
+                        margin: "40px 20px 20px 30px",
+                        borderRadius: "10px",
+                        border: "0px"
+                    }}>
                     </textarea>
                 </div>
             </form>

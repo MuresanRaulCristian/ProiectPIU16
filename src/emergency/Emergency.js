@@ -1,10 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import Footer from '../commons/footer'
-import { useState } from "react";
 import './Emergency.css'
 import image from './images/map.png'
-import { Icon } from '@iconify/react';
+import {Icon} from '@iconify/react';
 import NavigationBarPacient from '../commons/navigation-bar-pacient';
 import Draggable from 'react-draggable';
 
@@ -24,13 +23,13 @@ export default function Emergency() {
                 <div className="devices-map">
                     <img src={image} className="map-image"></img>
                 </div>
-                <Draggable onClick={() => window.location.href='/chat'}>
-                    <div className='chat-bubble' >
+                <Draggable onClick={() => window.location.href = '/chat'}>
+                    <div className='chat-bubble'>
                         <Icon icon="ant-design:message-filled" width={60} height={60} color={'white'}/>
 
                     </div>
                 </Draggable>
-                <Footer ></Footer>
+                <Footer></Footer>
             </div>
         </div>
     )

@@ -1,8 +1,7 @@
 import React, {useState} from 'react'
-import {TextField, List, Input, Select, MenuItem, Button, Grid} from '@mui/material'
+import {Button, Grid, Input, List} from '@mui/material'
 import './Graph.css'
 import {Icon} from '@iconify/react';
-import {render} from "react-dom";
 import cards from './graphs.json'
 import NavigationBarAdmin from '../commons/navigation-bar-admin';
 import Footer from '../commons/footer';
@@ -11,7 +10,6 @@ import Footer from '../commons/footer';
 const Graph = () => {
     const [inputText, setInputText] = useState("");
     const [isActive, setIsActive] = useState(false);
-
 
 
     const dropdownMenuProps = {
@@ -44,11 +42,11 @@ const Graph = () => {
                   justify="center"
 
             >
-                
+
                 {filteredData.map((item) => (
                     <Grid item xs={6} align="center" key={item.src}>
-                        <div className={'card'} onClick={() => window.location.href='/graph/' + item.id}>
-                            <div className={'image-text'} >{item.text}</div>
+                        <div className={'card'} onClick={() => window.location.href = '/graph/' + item.id}>
+                            <div className={'image-text'}>{item.text}</div>
                             <img src={require("" + item.src)} className={'small-image'}></img>
                         </div>
                     </Grid>
@@ -56,6 +54,7 @@ const Graph = () => {
             </Grid>
         )
     }
+
     return (
         <div className="main">
             <NavigationBarAdmin></NavigationBarAdmin>
@@ -80,42 +79,41 @@ const Graph = () => {
                     <option value="1">category</option>
                 </select>
 
-                <Button sx={{color: 'black', width:'50px'}}>
+                <Button sx={{color: 'black', width: '50px'}}>
                     <Icon icon="ant-design:sort-ascending-outlined" width={34.8} height={34}/>
                 </Button>
             </div>
-            <List input={inputText} />
+            <List input={inputText}/>
 
-            <Footer ></Footer>
-
+            <Footer></Footer>
 
 
             {/*<Grid item xs={6} align="center">*/}
-                {/*    <div className={'card'}>*/}
-                {/*        <div className={'image-text'}>Blood Glucose</div>*/}
-                {/*        <img src={require("./images/graph1.png")} className={'small-image'}></img>*/}
-                {/*    </div>*/}
-                {/*</Grid>*/}
-                {/*<Grid item xs={6} align="center">*/}
-                {/*    <div className={'card'} onClick={() => alert("hello")}>*/}
-                {/*        <div className={'image-text'}>Heart Rate</div>*/}
-                {/*        <img src={require("./images/graph2.png")} className={'small-image'}></img>*/}
+            {/*    <div className={'card'}>*/}
+            {/*        <div className={'image-text'}>Blood Glucose</div>*/}
+            {/*        <img src={require("./images/graph1.png")} className={'small-image'}></img>*/}
+            {/*    </div>*/}
+            {/*</Grid>*/}
+            {/*<Grid item xs={6} align="center">*/}
+            {/*    <div className={'card'} onClick={() => alert("hello")}>*/}
+            {/*        <div className={'image-text'}>Heart Rate</div>*/}
+            {/*        <img src={require("./images/graph2.png")} className={'small-image'}></img>*/}
 
-                {/*    </div>*/}
-                {/*</Grid>*/}
-                {/*<Grid item xs={6} align="center">*/}
-                {/*    <div className={'card'}>*/}
-                {/*        <div className={'image-text'}>Nutrients</div>*/}
-                {/*        <img src={require("./images/graph3.png")} className={'small-image'}></img>*/}
-                {/*    </div>*/}
-                {/*</Grid>*/}
-                {/*<Grid item xs={6} align="center">*/}
-                {/*    <div className={'card'}>*/}
-                {/*        <div className={'image-text'}>Oxygen Levels - Blood</div>*/}
-                {/*        <img src={require("./images/graph4.png")} className={'small-image'}></img>*/}
-                {/*    </div>*/}
+            {/*    </div>*/}
+            {/*</Grid>*/}
+            {/*<Grid item xs={6} align="center">*/}
+            {/*    <div className={'card'}>*/}
+            {/*        <div className={'image-text'}>Nutrients</div>*/}
+            {/*        <img src={require("./images/graph3.png")} className={'small-image'}></img>*/}
+            {/*    </div>*/}
+            {/*</Grid>*/}
+            {/*<Grid item xs={6} align="center">*/}
+            {/*    <div className={'card'}>*/}
+            {/*        <div className={'image-text'}>Oxygen Levels - Blood</div>*/}
+            {/*        <img src={require("./images/graph4.png")} className={'small-image'}></img>*/}
+            {/*    </div>*/}
 
-                {/*</Grid>*/}
+            {/*</Grid>*/}
 
         </div>
     )
